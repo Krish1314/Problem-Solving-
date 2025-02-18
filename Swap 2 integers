@@ -1,0 +1,30 @@
+import java.util.*;
+class Main {
+
+    public static void main(String[] args){
+        Scanner scr = new Scanner (System.in);
+        int a = scr.nextInt();
+        int b = scr.nextInt();
+        System.out.println("A :"+a);
+        System.out.println("B :"+b);
+
+        for(int i=0;i<=2;i++){
+            int c = a;
+            a = b;
+            b = c;
+        }
+
+        System.out.println("A will be :"+a);
+        System.out.println("B will be :"+b);
+    }
+}
+
+/Users/krishpatel/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=49807:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath /Users/krishpatel/IdeaProjects/Java_Basic/out/production/Java_Basic Main
+234
+5326
+A :234
+B :5326
+A will be :5326
+B will be :234
+
+Process finished with exit code 0
